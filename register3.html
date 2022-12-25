@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DC powerbank</title>
+    <link rel="stylesheet" type="text/css" href="dc.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="dcpower.html">home</a></li>
+                <li><a class="active"  href="register.html">my product</a></li>
+                <li><a href="">about dc power</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Dc power bank</h4>
+        <h2>Rent high level products to get more income</h2>
+        <h1>Earn valuable income everyday</h1>
+    </section>
+
+
+    <section id="productdetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="p1.jpeg" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="single-pro-details" onclick="window.location.href='recharge.html';">
+            <h6>RENT NOW</h6>
+            <h4>DC 3level power</h4>
+            <h2>10000</h2>
+            <input type="number" value="1">
+            <button class="normal">Rent now</button>
+            <h4>daily income 500</h4>
+            <span> There is a wide variety of portable chargers that would help you charge your device anywhere. You don’t have to worry about your smartphone running out of battery if you select one of these pocket-sized chargers.</span>
+        </div>
+    </section>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementByClassName("small-img");
+
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
